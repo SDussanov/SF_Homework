@@ -6,6 +6,10 @@ import reader.Reader;
 import java.io.IOException;
 import java.util.List;
 
+//Когда скачиваю проект с GIT пытаюсь запустить, программа как будто не видит путь к файлу src/main/resources/universityInfo.xlsx,
+//Надо файл заново сохранить в новую папку тогда путь программа увидит файл.
+//Почему такая ошибка выходит? C первого раза не видит путь к файлу? Это у всех так?
+
 public class Main {
 
     public static void main(String[] args) throws IOException {
