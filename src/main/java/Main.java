@@ -3,6 +3,8 @@ import interfacecomparator.StudentComparator;
 import interfacecomparator.UniversityComparator;
 import reader.Reader;
 import util.JsonUtil;
+import util.StatisticsUtil;
+import writer.Writer;
 
 import java.io.IOException;
 import java.util.List;
@@ -62,6 +64,9 @@ public class Main {
             System.out.println(studentFromJson);
 
         });
+
+        List<Statistics> statisticsList = StatisticsUtil.createStatistics(students, universities);
+        Writer.writeStatistics(statisticsList, "statistics.xlsx");
 
     }
 }
