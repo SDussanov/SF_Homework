@@ -8,12 +8,31 @@ import writer.Writer;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
+
+import static java.util.logging.Level.INFO;
 
 public class Main {
 
+    private static final Logger logger = Logger.getLogger(Main.class.getName());
+
     public static void main(String[] args) throws IOException {
 
-        /*Student student1 = new Student("dussanov", "1", 4, 4.5f);
+        try {
+            LogManager.getLogManager().readConfiguration(
+                    Main.class.getResourceAsStream("/logging.properties"));
+        } catch (IOException e) {
+            System.err.println("Не смог подгрузить логгер: " + e);
+        }
+
+        logger.log(INFO, "Начинаю отработку процессаа");
+
+
+        //Add single student
+        /*
+
+        Student student1 = new Student("dussanov", "1", 4, 4.5f);
         University university1 = new University("1", "New general.University", "NU", 2021, StudyProfile.IT);
         System.out.println(student1);
         System.out.println(university1);*/
@@ -21,13 +40,17 @@ public class Main {
         List<University> universities = Reader.readUniversities("src/main/resources/universityInfo.xlsx");
         UniversityComparator universityComparator = MyComparator.getUniversityComparator(UniversityComparatorType.YEAR);
         //universities.stream().sorted(universityComparator).forEach(System.out::println);
-
         universities.sort(universityComparator);
-        String universitiesJson = JsonUtil.universityListToJson(universities);
-        //System.out.println(universitiesJson);
 
+        //List universities from list to Json
+        /*
+        String universitiesJson = JsonUtil.universityListToJson(universities);
+        System.out.println(universitiesJson);
+
+
+        //check counts list = json
         List<University> universitiesFromJson = JsonUtil.jsonToUniversityList(universitiesJson);
-        //System.out.println(universitiesFromJson);
+        System.out.println(universitiesFromJson);
 
         System.out.println("Списки университетов равны: " + (universities.size() == universitiesFromJson.size()));
 
@@ -39,14 +62,15 @@ public class Main {
             University universityFromJson = JsonUtil.jsonToUniversity(universityJson);
             System.out.println(universityFromJson);
 
-        });
-
+        });*/
 
         List<Student> students = Reader.readStudents("src/main/resources/universityInfo.xlsx");
         StudentComparator studentComparator = MyComparator.getStudentComparator(StudentComparatorType.AVG_EXAM_SCORE);
         //students.stream().sorted(studentComparator).forEach(System.out::println);
         students.sort(studentComparator);
 
+        //List students from list to Json
+        /*
         String studentsJson = JsonUtil.studentListToJson(students);
         //System.out.println(studentsJson);
 
@@ -63,10 +87,11 @@ public class Main {
             Student studentFromJson = JsonUtil.jsonToStudent(studentJson);
             System.out.println(studentFromJson);
 
-        });
+        });*/
 
         List<Statistics> statisticsList = StatisticsUtil.createStatistics(students, universities);
         Writer.writeStatistics(statisticsList, "statistics.xlsx");
 
+        logger.log(INFO, "Закончил обработку процесса");
     }
 }

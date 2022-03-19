@@ -11,8 +11,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Writer {
+
+    private static final Logger logger = Logger.getLogger(Writer.class.getName());
 
     private Writer() {
     }
@@ -63,5 +67,7 @@ public class Writer {
         try (FileOutputStream outputStream = new FileOutputStream(filePath)) {
             workbook.write(outputStream);
         }
+
+        logger.log(Level.INFO, "Записал данные в эксель файл успешно");
     }
 }

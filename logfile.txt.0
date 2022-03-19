@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-03-19T09:23:06.317161300Z</date>
+  <millis>1647681786317</millis>
+  <nanos>161300</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application started, Logger configured</message>
+</record>
+<record>
+  <date>2022-03-19T09:23:07.763296300Z</date>
+  <millis>1647681787763</millis>
+  <nanos>296300</nanos>
+  <sequence>1</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application finished</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-03-19T14:52:05.179761600Z</date>
+  <millis>1647701525179</millis>
+  <nanos>761600</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application started, Logger configured</message>
+</record>
+<record>
+  <date>2022-03-19T14:52:06.585999Z</date>
+  <millis>1647701526585</millis>
+  <nanos>999000</nanos>
+  <sequence>1</sequence>
+  <logger>reader.Reader</logger>
+  <level>INFO</level>
+  <class>reader.Reader</class>
+  <method>readUniversities</method>
+  <thread>1</thread>
+  <message>Прочитал файл с университетами</message>
+</record>
+<record>
+  <date>2022-03-19T14:52:06.648830200Z</date>
+  <millis>1647701526648</millis>
+  <nanos>830200</nanos>
+  <sequence>2</sequence>
+  <logger>reader.Reader</logger>
+  <level>INFO</level>
+  <class>reader.Reader</class>
+  <method>readStudents</method>
+  <thread>1</thread>
+  <message>Прочитал файл со студентами</message>
+</record>
+<record>
+  <date>2022-03-19T14:52:07.058734800Z</date>
+  <millis>1647701527058</millis>
+  <nanos>734800</nanos>
+  <sequence>3</sequence>
+  <logger>writer.Writer</logger>
+  <level>INFO</level>
+  <class>writer.Writer</class>
+  <method>writeStatistics</method>
+  <thread>1</thread>
+  <message>Записал данные в эксель файл успешно</message>
+</record>
+<record>
+  <date>2022-03-19T14:52:07.061727200Z</date>
+  <millis>1647701527061</millis>
+  <nanos>727200</nanos>
+  <sequence>4</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application finished</message>
+</record>
+</log>
