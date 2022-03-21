@@ -1,0 +1,30 @@
+[
+  {
+    "studyProfile": "JURISPRUDENCE",
+    "avgScore": 4.33,
+    "studentCount": 3,
+    "universityCount": 2,
+    "universityName": "Московский Государственный Медицинский Университет;Тамбовский Университет Медицины;"
+  },
+  {
+    "studyProfile": "FINANCE",
+    "avgScore": 0.0,
+    "studentCount": 0,
+    "universityCount": 1,
+    "universityName": "Самарский Медицинский Институт;"
+  },
+  {
+    "studyProfile": "MEDICINE",
+    "avgScore": 0.0,
+    "studentCount": 0,
+    "universityCount": 2,
+    "universityName": "Казанский Университет Вычислений;Воронежский Литературно-Переводческий Университет;"
+  },
+  {
+    "studyProfile": "IT",
+    "avgScore": 4.54,
+    "studentCount": 8,
+    "universityCount": 2,
+    "universityName": "Московский Придуманный Институт;Московский Выдуманный Университет;"
+  }
+]

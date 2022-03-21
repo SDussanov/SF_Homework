@@ -10,8 +10,7 @@ import java.util.List;
 
 public class JsonUtil {
 
-
-    public static String studentToJson(Student student) {
+    /*   public static String studentToJson(Student student) {
         return new GsonBuilder().setPrettyPrinting().create().toJson(student);
     }
 
@@ -43,6 +42,10 @@ public class JsonUtil {
     public static List<University> jsonToUniversityList(String json) {
         return new Gson().fromJson(json, new TypeToken<List<University>>() {
         }.getType());
+    }*/
+
+    public static String writeListToJson(List<?> list) {
+        return new GsonBuilder().setPrettyPrinting().create().toJson(list);
     }
 
 }

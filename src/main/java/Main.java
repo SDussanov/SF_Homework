@@ -2,11 +2,13 @@ import general.*;
 import interfacecomparator.StudentComparator;
 import interfacecomparator.UniversityComparator;
 import reader.Reader;
-import util.JsonUtil;
 import util.StatisticsUtil;
 import writer.Writer;
+import writer.WriterJSON;
+import writer.WriterXML;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
@@ -91,6 +93,17 @@ public class Main {
 
         List<Statistics> statisticsList = StatisticsUtil.createStatistics(students, universities);
         Writer.writeStatistics(statisticsList, "statistics.xlsx");
+
+        FullInfo fullInfo = new FullInfo()
+                .setStudentList(students)
+                .setUniversityList(universities)
+                .setStatisticsList(statisticsList)
+                .setProcessDate(new Date());
+
+        WriterXML.generateXmlReq(fullInfo);
+        WriterJSON.writeJsonReq(fullInfo);
+
+
 
         logger.log(INFO, "Закончил обработку процесса");
     }

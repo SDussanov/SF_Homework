@@ -90,3 +90,834 @@
   <message>Application finished</message>
 </record>
 </log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-03-19T14:55:18.352325500Z</date>
+  <millis>1647701718352</millis>
+  <nanos>325500</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Начинаю отработку процессаа</message>
+</record>
+<record>
+  <date>2022-03-19T14:55:19.612956100Z</date>
+  <millis>1647701719612</millis>
+  <nanos>956100</nanos>
+  <sequence>1</sequence>
+  <logger>reader.Reader</logger>
+  <level>INFO</level>
+  <class>reader.Reader</class>
+  <method>readUniversities</method>
+  <thread>1</thread>
+  <message>Прочитал файл с университетами</message>
+</record>
+<record>
+  <date>2022-03-19T14:55:19.663820700Z</date>
+  <millis>1647701719663</millis>
+  <nanos>820700</nanos>
+  <sequence>2</sequence>
+  <logger>reader.Reader</logger>
+  <level>INFO</level>
+  <class>reader.Reader</class>
+  <method>readStudents</method>
+  <thread>1</thread>
+  <message>Прочитал файл со студентами</message>
+</record>
+<record>
+  <date>2022-03-19T14:55:19.851318500Z</date>
+  <millis>1647701719851</millis>
+  <nanos>318500</nanos>
+  <sequence>3</sequence>
+  <logger>writer.Writer</logger>
+  <level>INFO</level>
+  <class>writer.Writer</class>
+  <method>writeStatistics</method>
+  <thread>1</thread>
+  <message>Записал данные в эксель файл успешно</message>
+</record>
+<record>
+  <date>2022-03-19T14:55:19.851318500Z</date>
+  <millis>1647701719851</millis>
+  <nanos>318500</nanos>
+  <sequence>4</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Закончил обработку процесса</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-03-20T17:43:18.934085800Z</date>
+  <millis>1647798198934</millis>
+  <nanos>85800</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Начинаю отработку процессаа</message>
+</record>
+<record>
+  <date>2022-03-20T17:43:20.443235700Z</date>
+  <millis>1647798200443</millis>
+  <nanos>235700</nanos>
+  <sequence>1</sequence>
+  <logger>reader.Reader</logger>
+  <level>INFO</level>
+  <class>reader.Reader</class>
+  <method>readUniversities</method>
+  <thread>1</thread>
+  <message>Прочитал файл с университетами</message>
+</record>
+<record>
+  <date>2022-03-20T17:43:20.485124200Z</date>
+  <millis>1647798200485</millis>
+  <nanos>124200</nanos>
+  <sequence>2</sequence>
+  <logger>reader.Reader</logger>
+  <level>INFO</level>
+  <class>reader.Reader</class>
+  <method>readStudents</method>
+  <thread>1</thread>
+  <message>Прочитал файл со студентами</message>
+</record>
+<record>
+  <date>2022-03-20T17:43:20.711519200Z</date>
+  <millis>1647798200711</millis>
+  <nanos>519200</nanos>
+  <sequence>3</sequence>
+  <logger>writer.Writer</logger>
+  <level>INFO</level>
+  <class>writer.Writer</class>
+  <method>writeStatistics</method>
+  <thread>1</thread>
+  <message>Записал данные в эксель файл успешно</message>
+</record>
+<record>
+  <date>2022-03-20T17:43:20.715509100Z</date>
+  <millis>1647798200715</millis>
+  <nanos>509100</nanos>
+  <sequence>4</sequence>
+  <logger>writer.WriterXML</logger>
+  <level>INFO</level>
+  <class>writer.WriterXML</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>XML marshalling started</message>
+</record>
+<record>
+  <date>2022-03-20T17:43:20.725482500Z</date>
+  <millis>1647798200725</millis>
+  <nanos>482500</nanos>
+  <sequence>5</sequence>
+  <logger>writer.WriterXML</logger>
+  <level>SEVERE</level>
+  <class>writer.WriterXML</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>XML marshalling failed</message>
+  <exception>
+    <message>javax.xml.bind.JAXBException: Implementation of JAXB-API has not been found on module path or classpath.
+ - with linked exception:
+[java.lang.ClassNotFoundException: com.sun.xml.internal.bind.v2.ContextFactory]</message>
+    <frame>
+      <class>javax.xml.bind.ContextFinder</class>
+      <method>newInstance</method>
+      <line>232</line>
+    </frame>
+    <frame>
+      <class>javax.xml.bind.ContextFinder</class>
+      <method>find</method>
+      <line>375</line>
+    </frame>
+    <frame>
+      <class>javax.xml.bind.JAXBContext</class>
+      <method>newInstance</method>
+      <line>691</line>
+    </frame>
+    <frame>
+      <class>javax.xml.bind.JAXBContext</class>
+      <method>newInstance</method>
+      <line>632</line>
+    </frame>
+    <frame>
+      <class>writer.WriterXML</class>
+      <method>generateXmlReq</method>
+      <line>28</line>
+    </frame>
+    <frame>
+      <class>Main</class>
+      <method>main</method>
+      <line>104</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2022-03-20T17:43:20.728475Z</date>
+  <millis>1647798200728</millis>
+  <nanos>475000</nanos>
+  <sequence>6</sequence>
+  <logger>writer.WriterJSON</logger>
+  <level>INFO</level>
+  <class>writer.WriterJSON</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>Начинаю создавать JSON</message>
+</record>
+<record>
+  <date>2022-03-20T17:43:20.729471700Z</date>
+  <millis>1647798200729</millis>
+  <nanos>471700</nanos>
+  <sequence>7</sequence>
+  <logger>writer.WriterJSON</logger>
+  <level>INFO</level>
+  <class>writer.WriterJSON</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>Папка создана</message>
+</record>
+<record>
+  <date>2022-03-20T17:43:20.794299Z</date>
+  <millis>1647798200794</millis>
+  <nanos>299000</nanos>
+  <sequence>8</sequence>
+  <logger>writer.WriterJSON</logger>
+  <level>INFO</level>
+  <class>writer.WriterJSON</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>Успешно записал данные JSON</message>
+</record>
+<record>
+  <date>2022-03-20T17:43:20.795295500Z</date>
+  <millis>1647798200795</millis>
+  <nanos>295500</nanos>
+  <sequence>9</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Закончил обработку процесса</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-03-21T08:09:23.809471500Z</date>
+  <millis>1647850163809</millis>
+  <nanos>471500</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Начинаю отработку процессаа</message>
+</record>
+<record>
+  <date>2022-03-21T08:09:25.234430500Z</date>
+  <millis>1647850165234</millis>
+  <nanos>430500</nanos>
+  <sequence>1</sequence>
+  <logger>reader.Reader</logger>
+  <level>INFO</level>
+  <class>reader.Reader</class>
+  <method>readUniversities</method>
+  <thread>1</thread>
+  <message>Прочитал файл с университетами</message>
+</record>
+<record>
+  <date>2022-03-21T08:09:25.282302200Z</date>
+  <millis>1647850165282</millis>
+  <nanos>302200</nanos>
+  <sequence>2</sequence>
+  <logger>reader.Reader</logger>
+  <level>INFO</level>
+  <class>reader.Reader</class>
+  <method>readStudents</method>
+  <thread>1</thread>
+  <message>Прочитал файл со студентами</message>
+</record>
+<record>
+  <date>2022-03-21T08:09:25.530639Z</date>
+  <millis>1647850165530</millis>
+  <nanos>639000</nanos>
+  <sequence>3</sequence>
+  <logger>writer.Writer</logger>
+  <level>INFO</level>
+  <class>writer.Writer</class>
+  <method>writeStatistics</method>
+  <thread>1</thread>
+  <message>Записал данные в эксель файл успешно</message>
+</record>
+<record>
+  <date>2022-03-21T08:09:25.533632700Z</date>
+  <millis>1647850165533</millis>
+  <nanos>632700</nanos>
+  <sequence>4</sequence>
+  <logger>writer.WriterXML</logger>
+  <level>INFO</level>
+  <class>writer.WriterXML</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>XML marshalling started</message>
+</record>
+<record>
+  <date>2022-03-21T08:09:25.540613300Z</date>
+  <millis>1647850165540</millis>
+  <nanos>613300</nanos>
+  <sequence>5</sequence>
+  <logger>writer.WriterXML</logger>
+  <level>SEVERE</level>
+  <class>writer.WriterXML</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>XML marshalling failed</message>
+  <exception>
+    <message>jakarta.xml.bind.JAXBException: Implementation of Jakarta XML Binding-API has not been found on module path or classpath.
+ - with linked exception:
+[java.lang.ClassNotFoundException: org.glassfish.jaxb.runtime.v2.ContextFactory]</message>
+    <frame>
+      <class>jakarta.xml.bind.ContextFinder</class>
+      <method>newInstance</method>
+      <line>255</line>
+    </frame>
+    <frame>
+      <class>jakarta.xml.bind.ContextFinder</class>
+      <method>newInstance</method>
+      <line>243</line>
+    </frame>
+    <frame>
+      <class>jakarta.xml.bind.ContextFinder</class>
+      <method>find</method>
+      <line>407</line>
+    </frame>
+    <frame>
+      <class>jakarta.xml.bind.JAXBContext</class>
+      <method>newInstance</method>
+      <line>691</line>
+    </frame>
+    <frame>
+      <class>jakarta.xml.bind.JAXBContext</class>
+      <method>newInstance</method>
+      <line>632</line>
+    </frame>
+    <frame>
+      <class>writer.WriterXML</class>
+      <method>generateXmlReq</method>
+      <line>29</line>
+    </frame>
+    <frame>
+      <class>Main</class>
+      <method>main</method>
+      <line>104</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2022-03-21T08:09:25.543606500Z</date>
+  <millis>1647850165543</millis>
+  <nanos>606500</nanos>
+  <sequence>6</sequence>
+  <logger>writer.WriterJSON</logger>
+  <level>INFO</level>
+  <class>writer.WriterJSON</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>Начинаю создавать JSON</message>
+</record>
+<record>
+  <date>2022-03-21T08:09:25.599454200Z</date>
+  <millis>1647850165599</millis>
+  <nanos>454200</nanos>
+  <sequence>7</sequence>
+  <logger>writer.WriterJSON</logger>
+  <level>INFO</level>
+  <class>writer.WriterJSON</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>Успешно записал данные JSON</message>
+</record>
+<record>
+  <date>2022-03-21T08:09:25.599454200Z</date>
+  <millis>1647850165599</millis>
+  <nanos>454200</nanos>
+  <sequence>8</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Закончил обработку процесса</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-03-21T08:15:00.565168800Z</date>
+  <millis>1647850500565</millis>
+  <nanos>168800</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Начинаю отработку процессаа</message>
+</record>
+<record>
+  <date>2022-03-21T08:15:02.039228300Z</date>
+  <millis>1647850502039</millis>
+  <nanos>228300</nanos>
+  <sequence>1</sequence>
+  <logger>reader.Reader</logger>
+  <level>INFO</level>
+  <class>reader.Reader</class>
+  <method>readUniversities</method>
+  <thread>1</thread>
+  <message>Прочитал файл с университетами</message>
+</record>
+<record>
+  <date>2022-03-21T08:15:02.080119700Z</date>
+  <millis>1647850502080</millis>
+  <nanos>119700</nanos>
+  <sequence>2</sequence>
+  <logger>reader.Reader</logger>
+  <level>INFO</level>
+  <class>reader.Reader</class>
+  <method>readStudents</method>
+  <thread>1</thread>
+  <message>Прочитал файл со студентами</message>
+</record>
+<record>
+  <date>2022-03-21T08:15:02.249670600Z</date>
+  <millis>1647850502249</millis>
+  <nanos>670600</nanos>
+  <sequence>3</sequence>
+  <logger>writer.Writer</logger>
+  <level>INFO</level>
+  <class>writer.Writer</class>
+  <method>writeStatistics</method>
+  <thread>1</thread>
+  <message>Записал данные в эксель файл успешно</message>
+</record>
+<record>
+  <date>2022-03-21T08:15:02.255651500Z</date>
+  <millis>1647850502255</millis>
+  <nanos>651500</nanos>
+  <sequence>4</sequence>
+  <logger>writer.WriterXML</logger>
+  <level>INFO</level>
+  <class>writer.WriterXML</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>Начинаю создавать XLM</message>
+</record>
+<record>
+  <date>2022-03-21T08:15:02.264626500Z</date>
+  <millis>1647850502264</millis>
+  <nanos>626500</nanos>
+  <sequence>5</sequence>
+  <logger>writer.WriterXML</logger>
+  <level>SEVERE</level>
+  <class>writer.WriterXML</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>XML marshalling failed</message>
+  <exception>
+    <message>jakarta.xml.bind.JAXBException: Implementation of Jakarta XML Binding-API has not been found on module path or classpath.
+ - with linked exception:
+[java.lang.ClassNotFoundException: org.glassfish.jaxb.runtime.v2.ContextFactory]</message>
+    <frame>
+      <class>jakarta.xml.bind.ContextFinder</class>
+      <method>newInstance</method>
+      <line>255</line>
+    </frame>
+    <frame>
+      <class>jakarta.xml.bind.ContextFinder</class>
+      <method>newInstance</method>
+      <line>243</line>
+    </frame>
+    <frame>
+      <class>jakarta.xml.bind.ContextFinder</class>
+      <method>find</method>
+      <line>407</line>
+    </frame>
+    <frame>
+      <class>jakarta.xml.bind.JAXBContext</class>
+      <method>newInstance</method>
+      <line>691</line>
+    </frame>
+    <frame>
+      <class>jakarta.xml.bind.JAXBContext</class>
+      <method>newInstance</method>
+      <line>632</line>
+    </frame>
+    <frame>
+      <class>writer.WriterXML</class>
+      <method>generateXmlReq</method>
+      <line>29</line>
+    </frame>
+    <frame>
+      <class>Main</class>
+      <method>main</method>
+      <line>104</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2022-03-21T08:15:02.268615600Z</date>
+  <millis>1647850502268</millis>
+  <nanos>615600</nanos>
+  <sequence>6</sequence>
+  <logger>writer.WriterJSON</logger>
+  <level>INFO</level>
+  <class>writer.WriterJSON</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>Начинаю создавать JSON</message>
+</record>
+<record>
+  <date>2022-03-21T08:15:02.324465400Z</date>
+  <millis>1647850502324</millis>
+  <nanos>465400</nanos>
+  <sequence>7</sequence>
+  <logger>writer.WriterJSON</logger>
+  <level>INFO</level>
+  <class>writer.WriterJSON</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>Успешно записал данные JSON</message>
+</record>
+<record>
+  <date>2022-03-21T08:15:02.324465400Z</date>
+  <millis>1647850502324</millis>
+  <nanos>465400</nanos>
+  <sequence>8</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Закончил обработку процесса</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-03-21T08:18:05.513515400Z</date>
+  <millis>1647850685513</millis>
+  <nanos>515400</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Начинаю отработку процессаа</message>
+</record>
+<record>
+  <date>2022-03-21T08:18:06.746220200Z</date>
+  <millis>1647850686746</millis>
+  <nanos>220200</nanos>
+  <sequence>1</sequence>
+  <logger>reader.Reader</logger>
+  <level>INFO</level>
+  <class>reader.Reader</class>
+  <method>readUniversities</method>
+  <thread>1</thread>
+  <message>Прочитал файл с университетами</message>
+</record>
+<record>
+  <date>2022-03-21T08:18:06.786113900Z</date>
+  <millis>1647850686786</millis>
+  <nanos>113900</nanos>
+  <sequence>2</sequence>
+  <logger>reader.Reader</logger>
+  <level>INFO</level>
+  <class>reader.Reader</class>
+  <method>readStudents</method>
+  <thread>1</thread>
+  <message>Прочитал файл со студентами</message>
+</record>
+<record>
+  <date>2022-03-21T08:18:06.976604800Z</date>
+  <millis>1647850686976</millis>
+  <nanos>604800</nanos>
+  <sequence>3</sequence>
+  <logger>writer.Writer</logger>
+  <level>INFO</level>
+  <class>writer.Writer</class>
+  <method>writeStatistics</method>
+  <thread>1</thread>
+  <message>Записал данные в эксель файл успешно</message>
+</record>
+<record>
+  <date>2022-03-21T08:18:06.979597800Z</date>
+  <millis>1647850686979</millis>
+  <nanos>597800</nanos>
+  <sequence>4</sequence>
+  <logger>writer.WriterXML</logger>
+  <level>INFO</level>
+  <class>writer.WriterXML</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>Начинаю создавать XML</message>
+</record>
+<record>
+  <date>2022-03-21T08:18:06.987576700Z</date>
+  <millis>1647850686987</millis>
+  <nanos>576700</nanos>
+  <sequence>5</sequence>
+  <logger>writer.WriterXML</logger>
+  <level>SEVERE</level>
+  <class>writer.WriterXML</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>Ошибка при создании XML</message>
+  <exception>
+    <message>jakarta.xml.bind.JAXBException: Implementation of Jakarta XML Binding-API has not been found on module path or classpath.
+ - with linked exception:
+[java.lang.ClassNotFoundException: org.glassfish.jaxb.runtime.v2.ContextFactory]</message>
+    <frame>
+      <class>jakarta.xml.bind.ContextFinder</class>
+      <method>newInstance</method>
+      <line>255</line>
+    </frame>
+    <frame>
+      <class>jakarta.xml.bind.ContextFinder</class>
+      <method>newInstance</method>
+      <line>243</line>
+    </frame>
+    <frame>
+      <class>jakarta.xml.bind.ContextFinder</class>
+      <method>find</method>
+      <line>407</line>
+    </frame>
+    <frame>
+      <class>jakarta.xml.bind.JAXBContext</class>
+      <method>newInstance</method>
+      <line>691</line>
+    </frame>
+    <frame>
+      <class>jakarta.xml.bind.JAXBContext</class>
+      <method>newInstance</method>
+      <line>632</line>
+    </frame>
+    <frame>
+      <class>writer.WriterXML</class>
+      <method>generateXmlReq</method>
+      <line>29</line>
+    </frame>
+    <frame>
+      <class>Main</class>
+      <method>main</method>
+      <line>103</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2022-03-21T08:18:06.990568300Z</date>
+  <millis>1647850686990</millis>
+  <nanos>568300</nanos>
+  <sequence>6</sequence>
+  <logger>writer.WriterJSON</logger>
+  <level>INFO</level>
+  <class>writer.WriterJSON</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>Начинаю создавать JSON</message>
+</record>
+<record>
+  <date>2022-03-21T08:18:07.047415600Z</date>
+  <millis>1647850687047</millis>
+  <nanos>415600</nanos>
+  <sequence>7</sequence>
+  <logger>writer.WriterJSON</logger>
+  <level>INFO</level>
+  <class>writer.WriterJSON</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>Успешно записал данные JSON</message>
+</record>
+<record>
+  <date>2022-03-21T08:18:07.047415600Z</date>
+  <millis>1647850687047</millis>
+  <nanos>415600</nanos>
+  <sequence>8</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Закончил обработку процесса</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-03-21T08:41:57.983078300Z</date>
+  <millis>1647852117983</millis>
+  <nanos>78300</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Начинаю отработку процессаа</message>
+</record>
+<record>
+  <date>2022-03-21T08:41:59.623224100Z</date>
+  <millis>1647852119623</millis>
+  <nanos>224100</nanos>
+  <sequence>1</sequence>
+  <logger>reader.Reader</logger>
+  <level>INFO</level>
+  <class>reader.Reader</class>
+  <method>readUniversities</method>
+  <thread>1</thread>
+  <message>Прочитал файл с университетами</message>
+</record>
+<record>
+  <date>2022-03-21T08:41:59.668103900Z</date>
+  <millis>1647852119668</millis>
+  <nanos>103900</nanos>
+  <sequence>2</sequence>
+  <logger>reader.Reader</logger>
+  <level>INFO</level>
+  <class>reader.Reader</class>
+  <method>readStudents</method>
+  <thread>1</thread>
+  <message>Прочитал файл со студентами</message>
+</record>
+<record>
+  <date>2022-03-21T08:41:59.911455Z</date>
+  <millis>1647852119911</millis>
+  <nanos>455000</nanos>
+  <sequence>3</sequence>
+  <logger>writer.Writer</logger>
+  <level>INFO</level>
+  <class>writer.Writer</class>
+  <method>writeStatistics</method>
+  <thread>1</thread>
+  <message>Записал данные в эксель файл успешно</message>
+</record>
+<record>
+  <date>2022-03-21T08:41:59.914445700Z</date>
+  <millis>1647852119914</millis>
+  <nanos>445700</nanos>
+  <sequence>4</sequence>
+  <logger>writer.WriterXML</logger>
+  <level>INFO</level>
+  <class>writer.WriterXML</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>Начинаю создавать XML</message>
+</record>
+<record>
+  <date>2022-03-21T08:41:59.923422200Z</date>
+  <millis>1647852119923</millis>
+  <nanos>422200</nanos>
+  <sequence>5</sequence>
+  <logger>writer.WriterXML</logger>
+  <level>SEVERE</level>
+  <class>writer.WriterXML</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>Ошибка при создании XML</message>
+  <exception>
+    <message>jakarta.xml.bind.JAXBException: Implementation of Jakarta XML Binding-API has not been found on module path or classpath.
+ - with linked exception:
+[java.lang.ClassNotFoundException: org.glassfish.jaxb.runtime.v2.ContextFactory]</message>
+    <frame>
+      <class>jakarta.xml.bind.ContextFinder</class>
+      <method>newInstance</method>
+      <line>255</line>
+    </frame>
+    <frame>
+      <class>jakarta.xml.bind.ContextFinder</class>
+      <method>newInstance</method>
+      <line>243</line>
+    </frame>
+    <frame>
+      <class>jakarta.xml.bind.ContextFinder</class>
+      <method>find</method>
+      <line>407</line>
+    </frame>
+    <frame>
+      <class>jakarta.xml.bind.JAXBContext</class>
+      <method>newInstance</method>
+      <line>691</line>
+    </frame>
+    <frame>
+      <class>jakarta.xml.bind.JAXBContext</class>
+      <method>newInstance</method>
+      <line>632</line>
+    </frame>
+    <frame>
+      <class>writer.WriterXML</class>
+      <method>generateXmlReq</method>
+      <line>29</line>
+    </frame>
+    <frame>
+      <class>Main</class>
+      <method>main</method>
+      <line>103</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2022-03-21T08:41:59.926414200Z</date>
+  <millis>1647852119926</millis>
+  <nanos>414200</nanos>
+  <sequence>6</sequence>
+  <logger>writer.WriterJSON</logger>
+  <level>INFO</level>
+  <class>writer.WriterJSON</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>Начинаю создавать JSON</message>
+</record>
+<record>
+  <date>2022-03-21T08:41:59.994233500Z</date>
+  <millis>1647852119994</millis>
+  <nanos>233500</nanos>
+  <sequence>7</sequence>
+  <logger>writer.WriterJSON</logger>
+  <level>INFO</level>
+  <class>writer.WriterJSON</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>Успешно записал данные JSON</message>
+</record>
+<record>
+  <date>2022-03-21T08:41:59.995230500Z</date>
+  <millis>1647852119995</millis>
+  <nanos>230500</nanos>
+  <sequence>8</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Закончил обработку процесса</message>
+</record>
+</log>
